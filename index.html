@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Portfolio</title>
+    <script src="js/index.js"></script>
+    <link href="css/nav.css" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body id="mainBody">
+    <div class="nav" id="nav">
+        <div class="navicon"><a href="front.html">Home</a></div>
+        <div class="navicon"><a href="about.html">About</a></div>
+        <div class="navicon"><a href="projects.html">Projects</a></div>
+        <div class="navicon"><a href="front.html#contact">Contact</a></div>
+
+    </div>
+
+
+    <div class="barsDiv" id="barsDiv" onclick="openNav(this)">
+        <i class="fa fa-bars barIcon" aria-hidden="true"></i>
+
+    </div>
+    <div class="closeDiv" id="closeDiv" onclick="closeNav(this)">
+        <i class="fa fa-times closeIcon" aria-hidden="true"></i>
+
+    </div>
+
+
+
+    <div class="data" id="data">
+        <div class="myPicDiv">
+            <img src="img/saurabhNegiSquare.jpg" class="myPic" alt="saurabhNegi">
+        </div>
+        <div class="nameDiv">
+            <h1 class="name">Saurabh Negi</h1>
+        </div>
+        <div class="aboutDiv">
+            <h3 class="about">Web Designer | Software Developer</h3>
+        </div>
+
+        <div class="but1Div">
+            <a href="projects.html"><button class="but1">My Work</button></a>
+        </div>
+
+        <div class="but2Div">
+            <a href="front.html"> <button class="but2">About</button> </a>
+        </div>
+    </div>
+</body>
+
+</html>

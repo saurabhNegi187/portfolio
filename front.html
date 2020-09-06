@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Portfolio</title>
+    <script src="js/front.js"></script>
+    <link href="css/nav.css" rel="stylesheet">
+    <link href="css/front.css" rel="stylesheet">
+    <link href="css/slider.css" rel="stylesheet">
+    <link href="css/contact.css" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+
+    <div class="nav" id="nav">
+        <div class="navicon"><a href="front.html">Home</a></div>
+        <div class="navicon"><a href="about.html">About</a></div>
+        <div class="navicon"><a href="projects.html">Projects</a></div>
+        <div class="navicon"><a href="#contact">Contact</a></div>
+
+    </div>
+
+    <div class="barsDiv" id="barsDiv" onclick="openNav(this)">
+        <i class="fa fa-bars barIcon" aria-hidden="true"></i>
+
+    </div>
+    <div class="closeDiv" id="closeDiv" onclick="closeNav(this)">
+        <i class="fa fa-times closeIcon" aria-hidden="true"></i>
+
+    </div>
+
+
+    <div class="intro" id="intro">
+        <div class="upIntro">
+            <div class="name">Saurabh Negi</div>
+        </div>
+        <img class="profile" src="img/saurabhNegiSquare.jpg" alt="saurabhNegi">
+        <div class="iden">
+            <p>Web Designer | Software Developer</p>
+            <p>Integrated Msc Chenistry IIT Roorkee, 2nd Year</p>
+        </div>
+
+    </div>
+
+    <div class="sliderPic">
+        <section id="slider">
+            <h2>Have a Look!</h2>
+            <input type="radio" name="slider" id="s1" onclick="funR()">
+            <input type="radio" name="slider" id="s2" checked onclick="funE()">
+            <input type="radio" name="slider" id="s3" onclick="funP()">
+
+            <label for="s1" id="slide1" onclick="funA()"></label>
+            <label for="s2" id="slide2" onclick="funE()"></label>
+            <label for="s3" id="slide3" onclick="funP()"></label>
+
+        </section>
+    </div>
+
+    <div class="sliderData">
+        <div class="edu" id="edu">
+            <p>Currently pursuing his Undergraduate from IIT Roorkee in chemistry</p>
+            <p>Done his school from Jawahar Navodaya Vidhyalaya</p>
+            <p>Intrested in Quantum chemistry and Computers</p>
+        </div>
+        <div class="abo" id="abo">
+            <p>I am highly motivated about my work and have good leadership skills</p>
+            <p>For more information you can visit about section</p>
+
+        </div>
+        <div class="pro" id="pro">
+            <p>Done lot's of project in Software development and Web development</p>
+            <p>For more information you can visit project section</p>
+        </div>
+
+
+    </div>
+
+    <div class="contactDiv" id="contact">
+        <div class="detail">
+            <h2>Contact Us</h2>
+            <input type="email" placeholder="Write your working mail" class="email">
+            <input type="text" placeholder="Title" class="title">
+            <input type="number" placeholder="Ph-No" class="phone">
+            <button type="button" class="submit">Submit</button>
+        </div>
+
+        <div class="address">
+            <h2>Saurabh Negi</h2>
+            <p>India/Uttarakhand/Pauri/Garhwal/Satpuli 246172</p>
+            <h3>Follow me on</h3>
+            <div class="socialIcons">
+                <a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+</body>
+
+
+</html>

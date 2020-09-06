@@ -1,0 +1,161 @@
+[type=radio] {
+    display: none;
+}
+
+#slider {
+    height: 35vw;
+    position: relative;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+}
+
+#slider label {
+    margin: auto;
+    width: 25vw;
+    height: 25vw;
+    border-radius: 4px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    cursor: pointer;
+    transition: transform 0.4s ease;
+}
+
+#s1:checked~#slide3,
+#s2:checked~#slide1,
+#s3:checked~#slide2 {
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, .3), 0 2px 2px 0 rgba(0, 0, 0, .2);
+    transform: translate3d(-15%, 0, -100px);
+}
+
+#s1:checked~#slide1,
+#s2:checked~#slide2,
+#s3:checked~#slide3 {
+    box-shadow: 0 13px 25px 0 rgba(0, 0, 0, .3), 0 11px 7px 0 rgba(0, 0, 0, .19);
+    transform: translate3d(0, 0, 0);
+}
+
+#s1:checked~#slide2,
+#s2:checked~#slide3,
+#s3:checked~#slide1 {
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, .3), 0 2px 2px 0 rgba(0, 0, 0, .2);
+    transform: translate3d(15%, 0, -100px);
+}
+
+#slide1 {
+    background: url(../img/cv-resume-job-interview-concept-writing-a-resume-vector-6365617.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#slide2 {
+    background: url(../img/education.png);
+    background-size: cover;
+    background-position: center;
+}
+
+#slide3 {
+    background: url(../img/how-not-to-get-screwed-by-app-developers.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.sliderPic {
+    position: relative;
+    top: 24vw;
+    height: auto;
+    width: 40vw;
+    overflow: hidden;
+    display: inline-block;
+    transition: 0.5s ease;
+}
+
+.sliderData {
+    background-color: #b0adadde;
+    display: inline-block;
+    height: 20vw;
+    width: 40vw;
+    position: relative;
+    /* left: 14vw; */
+    top: 32vw;
+    right: 5vw;
+    float: right;
+    opacity: 0.6;
+    transition: 0.5s ease;
+}
+
+.edu {
+    position: absolute;
+    /* top: 6vw; */
+    display: inline-block;
+    width: 34vw;
+    left: 4vw;
+    font-family: cursive;
+    font-size: 1.5vw;
+    opacity: 1;
+    transition: 0.5s ease;
+}
+
+.pro {
+    position: absolute;
+    /* top: 6vw; */
+    display: inline-block;
+    width: 34vw;
+    left: 4vw;
+    font-family: cursive;
+    font-size: 1.5vw;
+    opacity: 0;
+    transition: 0.5s ease;
+}
+
+.abo {
+    position: absolute;
+    /* top: 6vw; */
+    display: inline-block;
+    width: 34vw;
+    left: 4vw;
+    font-family: cursive;
+    font-size: 1.5vw;
+    opacity: 0;
+    transition: 0.5s ease;
+}
+
+section h2 {
+    color: #21d9d9;
+    text-align: center;
+    font-size: 2rem;
+}
+
+@media screen and (max-width:700px) {
+    .sliderData {
+        display: block;
+        top: 35vw;
+        float: none;
+        width: 80vw;
+        left: 10vw;
+        height: 40vw;
+        transition: 0.5s ease;
+    }
+    .sliderPic {
+        left: 30vw;
+        transition: 0.5s ease;
+    }
+    .edu {
+        width: 70vw;
+        left: 8vw;
+        font-size: 3vw;
+        transition: 0.5s ease;
+    }
+    .abo {
+        width: 70vw;
+        left: 8vw;
+        font-size: 3vw;
+        transition: 0.5s ease;
+    }
+    .pro {
+        width: 70vw;
+        left: 8vw;
+        font-size: 3vw;
+        transition: 0.5s ease;
+    }
+}

@@ -1,0 +1,109 @@
+.barsDiv {
+    display: inline-block;
+    float: left;
+    position: relative;
+    top: 2vh;
+    font-size: 2.2vw;
+    color: #dab70a;
+    left: 2vw;
+    overflow: hidden;
+    transition: opacity 2s ease;
+}
+
+.barsDiv:hover {
+    color: #dab70aa8;
+    transition: 0.2s ease;
+}
+
+.closeDiv {
+    display: inline-block;
+    float: left;
+    position: relative;
+    top: 5vw;
+    font-size: 2.2vw;
+    color: #dab70a;
+    left: 1.3vw;
+    overflow: hidden;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s ease;
+}
+
+.closeDiv:hover {
+    color: #dab70aa8;
+    transition: 0.2s ease;
+}
+
+.nav {
+    display: inline-block;
+    position: absolute;
+    height: 20vw;
+    width: 10vw;
+    left: 4vw;
+    top: 0vw;
+    text-align: center;
+    font-size: 2vw;
+    opacity: 0;
+    transition: 0.5s ease;
+}
+
+.newNav {
+    display: inline-block;
+    position: absolute;
+    height: 10h;
+    width: 40vw;
+    top: 5vw;
+    text-align: center;
+    font-size: 2vw;
+    transition: 0.5s ease;
+    opacity: 1;
+}
+
+.navicon {
+    margin: 1vh 1vh 3vh 2vh;
+    padding-bottom: 0.5vh;
+    display: inline;
+}
+
+.navicon a {
+    text-decoration: none;
+    color: #f1ea00;
+}
+
+.navicon a:hover {
+    color: #b58b3d;
+}
+
+@media screen and (max-width:1000px) {
+    .barsDiv {
+        font-size: 3.2vw;
+        transition: 0.5s ease;
+    }
+    .closeDiv {
+        font-size: 3.2vw;
+        transition: 0.5s ease;
+    }
+    .newNav {
+        top: 5.5vw;
+        font-size: 2.4vw;
+        width: 55vw;
+        transition: 0.5s ease;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .barsDiv {
+        font-size: 5vw;
+        transition: 0.5s ease;
+    }
+    .closeDiv {
+        font-size: 4vw;
+        transition: 0.5s ease;
+    }
+    .newNav {
+        top: 6vw;
+        font-size: 3.5vw;
+        width: 90vw;
+        transition: 0.5s ease;
+    }
+}

@@ -1,0 +1,230 @@
+    body {
+        margin: 0px;
+        padding: 0px;
+    }
+    
+    .about {
+        position: absolute;
+        display: inline-block;
+        width: 70vw;
+        left: 15vw;
+        right: 15vw;
+        top: 8vw;
+        padding: 0px;
+        margin: 0px;
+        color: #47eb2a;
+        transition: 0.5s ease;
+        text-align: center;
+    }
+    
+    .about:hover {
+        color: coral;
+    }
+    
+    .about hr {
+        width: 25vw;
+        display: inline-block;
+    }
+    
+    .aboutText {
+        width: 15vw;
+        display: inline-block;
+        text-align: center;
+        font-size: 2.5vw;
+    }
+    
+    .aboutData {
+        margin: 0 auto;
+        position: relative;
+        width: 60vw;
+        height: 66vw;
+        /* left: 16.5vw; */
+        top: 15vw;
+        background-color: rgba(128, 128, 128, 0.701);
+        border-radius: 15px;
+        border: 2px #cdcdcb;
+        border-style: groove;
+        box-shadow: 1px 5px 20px 4px black;
+    }
+    
+    .flip-box {
+        background-color: transparent;
+        width: 15vw;
+        height: 15vw;
+        border: 1px solid #f1f1f1;
+        perspective: 1000px;
+        display: inline-block;
+        position: relative;
+        left: 4vw;
+        top: -5.8vw;
+        border: 2px gainsboro;
+        border-style: groove;
+    }
+    
+    .flip-box-inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 0.8s;
+        transform-style: preserve-3d;
+    }
+    
+    .flip-box:hover .flip-box-inner {
+        transform: rotateY(180deg);
+    }
+    
+    .flip-box-front,
+    .flip-box-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+    }
+    
+    .flip-box-front {
+        background-color: #bbb;
+        color: black;
+    }
+    
+    .flip-box-back {
+        background-color: #555;
+        color: white;
+        transform: rotateY(180deg);
+    }
+    
+    .aboutInfo {
+        position: relative;
+        display: inline-block;
+        width: 30vw;
+        left: 10vw;
+        top: 5vw;
+        font-size: 1.3vw;
+        font-family: cursive;
+        text-align: center;
+        color: #020301;
+        border-radius: 15px;
+    }
+    
+    .skills {
+        position: relative;
+        top: 8vw;
+        font-family: sans-serif;
+        font-size: 1.5vw;
+        text-align: center;
+    }
+    
+    .skillList {
+        position: relative;
+        top: 8vw;
+        display: inline-block;
+        width: 28.8vw;
+        /* padding-left: 10vw; */
+        font-family: cursive;
+        text-align: center;
+        font-size: 1.5vw;
+    }
+    
+    .myImg {
+        width: 15vw;
+        height: 15vw;
+    }
+    
+    @media screen and (max-width:1000px) {
+        .aboutText {
+            font-size: 3.5vw;
+            transition: 0.5s ease;
+            margin: 0vw 1vw;
+        }
+        .about {
+            transition: 0.5s ease;
+            top: 12vw;
+        }
+        .aboutData {
+            top: 20vw;
+            transition: 0.5s ease;
+            height: 112.5vw;
+        }
+        .flip-box {
+            width: 20vw;
+            height: 20vw;
+            left: 20vw;
+            transition: 0.5s ease;
+            top: 3vw;
+        }
+        .myImg {
+            width: 20vw;
+            transition: 0.5s ease;
+            height: 20vw;
+        }
+        .aboutInfo {
+            width: 50vw;
+            left: 5vw;
+            transition: 0.5s ease;
+            top: 6vw;
+            font-size: 2vw;
+        }
+        .skills {
+            transition: 0.5s ease;
+            font-size: 2.5vw;
+        }
+        .skillList {
+            transition: 0.5s ease;
+            font-size: 2vw;
+        }
+    }
+    
+    @media screen and (max-width:700px) {
+        .aboutText {
+            font-size: 5vw;
+            margin: 0vw 3vw;
+            transition: 0.5s ease;
+            width: 25vw;
+        }
+        .about {
+            display: block;
+            top: 16vw;
+            width: 100vw;
+            transition: 0.5s ease;
+            left: 0;
+        }
+        .about hr {
+            transition: 0.5s ease;
+            width: 30vw;
+        }
+        .aboutData {
+            top: 30vw;
+            height: 250vw;
+            transition: 0.5s ease;
+            width: 90vw;
+        }
+        .flip-box {
+            width: 50vw;
+            height: 50vw;
+            left: 16vw;
+            transition: 0.5s ease;
+            top: 5vw;
+        }
+        .myImg {
+            width: 50vw;
+            transition: 0.5s ease;
+            height: 50vw;
+        }
+        .aboutInfo {
+            width: 80vw;
+            left: 5vw;
+            top: 10vw;
+            transition: 0.5s ease;
+            font-size: 3vw;
+        }
+        .skills {
+            transition: 0.5s ease;
+            font-size: 5vw;
+        }
+        .skillList {
+            font-size: 4vw;
+            width: 80vw;
+            transition: 0.5s ease;
+        }
+    }

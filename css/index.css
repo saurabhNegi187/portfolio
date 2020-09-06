@@ -1,0 +1,202 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: #c06e1fe0;
+    background-image: url(../img/brightBackground.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+}
+
+.mainBody {
+    margin: 0px;
+    padding: 0px;
+    background-color: #c06e1fe0;
+    background-image: url(../img/brightBackground.jpg);
+    background-size: cover;
+    opacity: 0.8;
+}
+
+.data {
+    display: inline-block;
+    position: relative;
+    left: 26vw;
+    width: 40vw;
+    top: 20vh;
+}
+
+.myPicDiv {
+    display: inline-block;
+    background-color: black;
+    height: 10vw;
+    width: auto;
+    border-radius: 50%;
+    position: relative;
+    left: 15vw;
+    overflow: hidden;
+}
+
+.myPic {
+    height: 10vw;
+    width: auto;
+    border-radius: 50%;
+    position: relative;
+    /* border: white; */
+    border: 2px solid white;
+    border-style: ridge;
+    overflow: hidden;
+}
+
+.myPic:hover {
+    border-color: black;
+    opacity: 0.8;
+    transition: 0.4s ease;
+}
+
+.name {
+    position: relative;
+    text-align: center;
+    font-size: 3.5vw;
+    font-family: cursive;
+    font-weight: 300;
+    color: #f6f6f6fa;
+    margin: 2vh 0vw 1vh 0vw;
+}
+
+.about {
+    position: relative;
+    text-align: center;
+    font-size: 2vw;
+    font-family: cursive;
+    font-weight: 300;
+    color: #f6f6f6fa;
+    margin: 1vh 0vw;
+}
+
+.but1Div,
+.but2Div {
+    width: 15vw;
+    margin: 2vw .5vw;
+    display: inline-block;
+    position: relative;
+    left: 4vw;
+}
+
+.but1,
+.but2 {
+    width: 15vw;
+    height: 3vw;
+    border-radius: 12px;
+    color: #f7f7f7;
+    background: #13141394;
+    border: 2px solid white;
+    font-size: 1.5vw;
+    padding: 4px 0;
+}
+
+.but1:hover,
+.but2:hover {
+    border-color: #78ebd6;
+    color: #78ebd6;
+    transition: 0.4s ease;
+    text-shadow: 0 0 black;
+    box-shadow: 3px 4px 13px 1px black;
+}
+
+@media screen and (max-width:1000px) {
+    .barsDiv {
+        font-size: 3.2vw;
+        transition: 1s ease;
+    }
+    .closeDiv {
+        font-size: 3.2vw;
+        transition: 1s ease;
+    }
+    .newNav {
+        top: 5.5vw;
+        font-size: 2.4vw;
+        width: 45vw;
+        transition: 1s ease;
+    }
+    .data {
+        top: 20vw;
+        left: 23vw;
+        width: 50vw;
+        transition: 1s ease;
+    }
+    .myPicDiv {
+        left: 18vw;
+        height: 12vw;
+        transition: 1s ease;
+    }
+    .myPic {
+        height: 12vw;
+        transition: 1s ease;
+    }
+    .but1Div,
+    .but2Div {
+        width: 18vw;
+        left: 5vw;
+        transition: 1s ease;
+    }
+    .but1,
+    .but2 {
+        width: 18vw;
+        transition: 1s ease;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .barsDiv {
+        font-size: 5vw;
+        transition: 1s ease;
+    }
+    .closeDiv {
+        font-size: 5vw;
+        transition: 1s ease;
+    }
+    .newNav {
+        top: 6vw;
+        font-size: 3.5vw;
+        width: 90vw;
+        transition: 1s ease;
+    }
+    .data {
+        top: 20vw;
+        left: 16vw;
+        width: 60vw;
+        transition: 1s ease;
+    }
+    .name {
+        font-size: 5vw;
+    }
+    .about {
+        font-size: 3vw;
+    }
+    .myPicDiv {
+        left: 20vw;
+        height: 18vw;
+        transition: 1s ease;
+    }
+    .myPic {
+        height: 18vw;
+        transition: 1s ease;
+    }
+    .but1Div,
+    .but2Div {
+        display: block;
+        width: 90%;
+        left: 2vw;
+        height: 5vw;
+        transition: 1s ease;
+        top: 4vw;
+    }
+    .but1,
+    .but2 {
+        width: 100%;
+        transition: 1s ease;
+        height: 5vw;
+        font-size: 3vw;
+    }
+}

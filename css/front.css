@@ -1,0 +1,122 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.intro {
+    margin: 0;
+    padding: 0;
+    background-color: #61f8d2;
+    height: 23vw;
+    width: 60vw;
+    position: relative;
+    left: 20vw;
+    top: 15vw;
+    box-sizing: content-box;
+    border-radius: 10px;
+    transition: 1s ease;
+}
+
+.upIntro {
+    margin: 0;
+    position: absolute;
+    height: 40%;
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;
+    transition: 0.5s ease;
+    overflow: hidden;
+    background: #e0ff36db;
+    border-bottom: 2px groove #43fdd5;
+    transition: 1s ease;
+}
+
+.name {
+    color: #010e00;
+    position: absolute;
+    display: inline-block;
+    left: 33vw;
+    top: 3.5vw;
+    font-family: cursive;
+    font-size: 3.5vw;
+}
+
+.profile {
+    height: 13vw;
+    position: absolute;
+    background-color: black;
+    width: 13vw;
+    border-radius: 50%;
+    top: 3.5vw;
+    left: 2vw;
+    box-shadow: 5px 0px 10px 0px #7b7b7b;
+}
+
+.profile:hover {
+    border: 2px groove;
+    border-color: black;
+    opacity: 0.9;
+    transition: 0.4s ease;
+}
+
+.iden {
+    position: relative;
+    top: 14vw;
+    font-size: 1.4vw;
+    left: 16vw;
+    font-family: monospace
+}
+
+@media screen and (max-width:1000px) {
+    .intro {
+        height: 30vw;
+        width: 70vw;
+        left: 15vw;
+        transition: 0.5s ease;
+    }
+    .profile {
+        top: 4vw;
+        width: 15vw;
+        height: 15vw;
+        transition: 0.5s ease;
+    }
+    .name {
+        left: 36vw;
+        top: 4.5vw;
+        font-size: 4.5vw;
+        transition: 0.5s ease;
+    }
+    .iden {
+        top: 14vw;
+        font-size: 1.7vw;
+        left: 16vw;
+        transition: 0.5s ease;
+    }
+    .sliderData {
+        right: 8vw;
+        transition: 0.5s ease;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .intro {
+        width: 80vw;
+        left: 10vw;
+        transition: 0.5s ease;
+    }
+    .profile {
+        left: 3vw;
+        transition: 0.5s ease;
+    }
+    .name {
+        left: 40vw;
+        top: 3.5vw;
+        font-size: 5.5vw;
+        transition: 0.5s ease;
+    }
+    .iden {
+        top: 14vw;
+        font-size: 1.7vw;
+        left: 16vw;
+        transition: 0.5s ease;
+    }
+}

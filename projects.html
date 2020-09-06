@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Resume</title>
+    <script src="js/projects.js"></script>
+
+    <link href="css/contact.css" rel="stylesheet">
+    <link href="css/nav.css" rel="stylesheet">
+    <link href="css/projects.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <div class="nav" id="nav">
+        <div class="navicon"><a href="front.html">Home</a></div>
+        <div class="navicon"><a href="about.html">About</a></div>
+        <div class="navicon"><a href="projects.html">Projects</a></div>
+        <div class="navicon"><a href="#contact">Contact</a></div>
+
+    </div>
+
+    <div class="barsDiv" id="barsDiv" onclick="openNav(this)">
+        <i class="fa fa-bars barIcon" aria-hidden="true"></i>
+
+    </div>
+    <div class="closeDiv" id="closeDiv" onclick="closeNav(this)">
+        <i class="fa fa-times closeIcon" aria-hidden="true"></i>
+
+    </div>
+    <div class="projectIndex">
+        <div class="dataSci" onclick="dataSci()">
+
+        </div>
+        <div class="webDev" onclick="webDev()">
+
+        </div>
+        <div class="java" onclick="java()">
+
+        </div>
+    </div>
+
+    <div class="detailProject">
+        <h2>Project list </h2>
+        <div class="dScidet" id="dScidet">
+            <p><i class="fa fa-plus" aria-hidden="true"></i> DNA Analysis : Finding certain Genes</p>
+            <p><i class="fa fa-plus" aria-hidden="true"></i> Baby Names data : Most popular baby</p>
+            <p><i class="fa fa-plus" aria-hidden="true"></i> Weather Analysis : Temperature Range and Pollution</p>
+
+        </div>
+
+        <div class="wDdet" id="wDdet">
+            <p><i class="fa fa-plus" aria-hidden="true"></i> Sports Website : Diffrent Football teams</p>
+            <p><i class="fa fa-plus" aria-hidden="true"></i> Shoes Shop : Local Delivery</p>
+            <p><i class="fa fa-plus" aria-hidden="true"></i> School Website : Data of students</p>
+            <p><i class="fa fa-plus" aria-hidden="true"></i> Portfolio : This one</p>
+
+        </div>
+
+        <div class="jdet" id="jdet">
+            <p><i class="fa fa-plus" aria-hidden="true"></i> Ceaser Cipher : Breaking of Code</p>
+            <p><i class="fa fa-plus" aria-hidden="true"></i> Math for School: Solving math using programming</p>
+            <p><i class="fa fa-plus" aria-hidden="true"></i> Calculator : Scientific Calculator</p>
+
+        </div>
+    </div>
+    <div class="contactDiv" id="contact">
+        <div class="detail">
+            <h2>Contact Us</h2>
+            <input type="email" placeholder="Write your working mail" class="email">
+            <input type="text" placeholder="Title" class="title">
+            <input type="number" placeholder="Ph-No" class="phone">
+            <button type="button" class="submit">Submit</button>
+        </div>
+
+        <div class="address">
+            <h2>Saurabh singh negi</h2>
+            <p>India/Uttarakhand/Pauri/Garhwal/Satpuli 246172</p>
+            <h3>Follow me on</h3>
+            <div class="socialIcons">
+                <a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+            </div>
+        </div>
+
+
+    </div>
+</body>
+
+</html>

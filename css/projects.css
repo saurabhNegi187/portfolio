@@ -1,0 +1,195 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+.projectIndex {
+    position: relative;
+    height: 25vw;
+    width: 80vw;
+    display: inline-block;
+    left: 10vw;
+    top: 12vw;
+}
+
+.dataSci {
+    position: relative;
+    height: 20vw;
+    width: 20wv;
+    width: 20vw;
+    display: inline-block;
+    top: 2.5vw;
+    left: 5vw;
+    border: 2px solid;
+    background-image: url(../img/dataScience.jpg);
+    background-size: cover;
+    background-position: center;
+    opacity: 0.9;
+}
+
+.dataSci:hover {
+    opacity: 1;
+    border-color: #eef313;
+    transition: 0.5s ease;
+    box-shadow: 5px 6px 3px 1px black;
+}
+
+.webDev {
+    position: relative;
+    height: 20vw;
+    width: 20wv;
+    width: 20vw;
+    display: inline-block;
+    top: 2.5vw;
+    left: 7vw;
+    border: 2px solid;
+    background-image: url(../img/Web-Development.jpeg);
+    background-size: cover;
+    background-position: center;
+    opacity: 0.9;
+}
+
+.webDev:hover {
+    opacity: 1;
+    border-color: #eef313;
+    transition: 0.5s ease;
+    box-shadow: 5px 6px 3px 1px black;
+}
+
+.java {
+    position: relative;
+    height: 20vw;
+    width: 20wv;
+    width: 20vw;
+    display: inline-block;
+    top: 2.5vw;
+    left: 9vw;
+    border: 2px solid;
+    background-image: url(../img/java.jfif);
+    background-size: cover;
+    background-position: center;
+    opacity: 0.9;
+}
+
+.java:hover {
+    opacity: 1;
+    border-color: #eef313;
+    transition: 0.5s ease;
+    box-shadow: 5px 6px 3px 1px black;
+}
+
+.detailProject {
+    position: relative;
+    height: 25vw;
+    top: 18vw;
+    display: inline-block;
+    width: 50vw;
+    left: 25vw;
+    border: 2px solid;
+    border-radius: 15px;
+    background-color: #eef72c;
+    border-style: groove;
+    box-shadow: 6px 3px 6px 3px #b7b7b2;
+}
+
+.dScidet {
+    position: absolute;
+    /* top: 6vw; */
+    display: inline-block;
+    width: 34vw;
+    left: 4vw;
+    font-family: cursive;
+    font-size: 1.5vw;
+    opacity: 1;
+    transition: 0.5s ease;
+}
+
+.jdet {
+    position: absolute;
+    top: 6vw;
+    display: inline-block;
+    width: 40vw;
+    left: 5vw;
+    font-family: cursive;
+    font-size: 1.5vw;
+    opacity: 0;
+    transition: 0.5s ease;
+}
+
+.wDdet {
+    position: absolute;
+    top: 6vw;
+    display: inline-block;
+    width: 40vw;
+    left: 5vw;
+    font-family: cursive;
+    font-size: 1.5vw;
+    opacity: 0;
+    transition: 0.5s ease;
+}
+
+.detailProject h2 {
+    text-align: center;
+    position: relative;
+    top: 0.5vw;
+    font-size: 2vw;
+    transition: 0.5s ease;
+}
+
+@media screen and (max-width:700px) {
+    .projectIndex {
+        position: relative;
+        top: 60vw;
+        width: 80vw;
+        height: 190vw;
+        left: 0;
+        transition: 0.5s ease;
+    }
+    .dataSci {
+        display: block;
+        margin: 8vw auto;
+        width: 50vw;
+        height: 50vw;
+        left: 0;
+        transition: 0.5s ease;
+    }
+    .webDev {
+        display: block;
+        margin: 8vw auto;
+        width: 50vw;
+        height: 50vw;
+        left: 0;
+        transition: 0.5s ease;
+    }
+    .java {
+        display: block;
+        margin: 8vw auto;
+        width: 50vw;
+        height: 50vw;
+        left: 0;
+        transition: 0.5s ease;
+    }
+    .detailProject {
+        position: fixed;
+        width: 80vw;
+        margin: 0 auto;
+        left: 10vw;
+        height: 40vw;
+        transition: 0.5s ease;
+    }
+    .dScidet {
+        font-size: 2.8vw;
+        width: 80vw;
+        transition: 0.5s ease;
+    }
+    .jdet {
+        font-size: 2.8vw;
+        width: 80vw;
+        transition: 0.5s ease;
+    }
+    .wDdet {
+        font-size: 2.8vw;
+        width: 80vw;
+        transition: 0.5s ease;
+    }
+}
